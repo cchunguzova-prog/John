@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+/* __________________HEADER____________ */
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 27px 60px;
+}
+
+nav {
+  display: flex;
+  gap: 33px;
+}
+
+a {
+  text-decoration: none;
+  font-family: Heebo;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+}
+
+/* ___________________SECTION-1______________ */
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 140px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  h1 {
+    font-family: Heebo;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+  }
+  p {
+    font-family: Heebo;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  button {
+    background: #ff6464;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 2px;
+    border: none;
+  }
+}
+
+.img {
+  width: 300px;
+  height: 250px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* _______________SECTION-2________________________ */
+
+#section-2 {
+  background: #edf7fa;
+  padding: 33px 0px;
+  margin-top: 71px;
+  margin-bottom: 35px;
+}
+
+.section-2 {
+  display: flex;
+  gap: 40px;
+  div {
+    flex-grow: 1;
+    margin-top: 22px;
+    border-radius: 4px;
+  }
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 23px;
+  gap: 27px;
+  h3 {
+    font-family: Heebo;
+    font-weight: 700;
+    font-size: 26px;
+  }
+  p {
+    font-family: Heebo;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.view {
+  display: flex;
+  justify-content: flex-end;
+  color: #00a8cc;
+  cursor: pointer;
+}
+
+/* ____________SECTION-3___________ */
+
+.card {
+  display: flex;
+  gap: 30px;
+  margin-top: 22px;
+}
+
+.design {
+  font-family: Heebo;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+#design {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  p {
+    font-family: Heebo;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.dashboard {
+  font-family: Heebo;
+  font-weight: 400;
+  font-size: 20px;
+  color: #8695a4;
+}
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  p {
+    font-family: Heebo;
+    font-weight: 400;
+    font-size: 22px;
+  }
+}
+
+/* __________FOOTER__________ */
+
+footer {
+  padding: 54px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  div {
+    display: flex;
+    gap: 35px;
+  }
+}
+
+@media (max-width: 360px) {
+  nav {
+    display: none;
+  }
+  .burger {
+    width: 50px;
+  }
+  .burger div {
+    width: 100%;
+    border-bottom: 3px solid black;
+    margin-bottom: 5px;
+  }
+  .section-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+    gap: 34px;
+  }
+
+  .img {
+    order: 1;
+  }
+  .info {
+    order: 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info h1 {
+    font-size: 32px;
+    font-family: Heebo;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .view {
+    display: none;
+  }
+  .rec {
+    text-align: center;
+  }
+
+  .posts {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 23px;
+    gap: 10px;
+    h3 {
+      font-family: Heebo;
+      font-weight: 700;
+      font-size: 26px;
+    }
+    p {
+      font-family: Heebo;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-top: 5px;
+    }
+  }
+
+  .hr-1 {
+    display: none;
+  }
+
+  .card-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    display: none;
+  }
+
+  footer {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+}
